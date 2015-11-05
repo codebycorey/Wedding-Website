@@ -3,6 +3,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
+                    'css/normalize.css' : 'sass/normalize.scss',
                     'css/style.css' : 'sass/style.scss'
                 },
                 options: {
