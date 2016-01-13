@@ -1,13 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Rouge+Script);
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Rouge Script', cursive;
+}
+
+a {
+    text-decoration: none;
+}
 
 header {
-    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
     background-color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+    height: 60px;
+    .navbar-nav {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 20px 20px 20px;
+            a {
+                color: white;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
 .hero {
-    background-image: url('../assets/img/bg.jpg');
+    z-index: -1;
+    overflow: hidden;
+    background-image: url('../assets/img/Edited 2-0030.jpg');
     background-size: cover;
+    background-position: center top;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+
+    .hero-text {
+        color: white;
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        width: 35%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        h1 {
+            text-shadow: 0 2px 5px rgba(0,0,0,0.75);
+            font-weight: 100;
+            font-size: 160px;
+            padding: 0;
+            margin: -50px;
+        }
+        span {
+            font-family: 'Rouge Script', cursive;
+            font-size: 60px;
+        }
+
+        p {
+            text-shadow: 0 2px 5px rgba(0,0,0,0.75);
+        }
+        .knot {
+            // margin-: 20%;
+            padding-top: 15%;
+            font-size: 30px;
+        }
+        .date {
+            font-size: 30px;
+        }
+    }
+}
+
+.our-story {
+    .title {
+        text-align: center;
+        font-size: 60px;
+    }
 }

@@ -29,6 +29,9 @@ module.exports = function(grunt) {
             sass: {
                 files: ['sass/**/*.scss'],
                 tasks: ['sass'],
+            },
+            html: {
+                files: ['**/*.html']
             }
         }
     });
