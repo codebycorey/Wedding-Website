@@ -24,6 +24,7 @@ header {
 }
 
 .navbar-fixed {
+    z-index: 999;
     position: fixed;
     width: 100%;
     background-color: black;
@@ -48,9 +49,10 @@ header {
 }
 
 .hero {
+    top: 60px;
     z-index: -1;
     overflow: hidden;
-    background-image: url('../assets/img/Edited 2-0030.jpg');
+    background-image: url('../assets/img/Edited 2-0013.jpg');
     background-size: cover;
     background-position: center top;
     width: 100%;
@@ -59,8 +61,8 @@ header {
     .hero-text {
         color: white;
         position: absolute;
-        top: 46%;
-        left: 50%;
+        top: 50%;
+        left: 25%;
         width: 35%;
         transform: translateX(-50%) translateY(-50%);
         text-align: center;
@@ -81,7 +83,7 @@ header {
         }
         .knot {
             // margin-: 20%;
-            padding-top: 15%;
+            // padding-top: 15%;
             font-size: 30px;
         }
         .date {
