@@ -52,7 +52,7 @@ header {
     top: 60px;
     z-index: -1;
     overflow: hidden;
-    background-image: url('../assets/img/Edited 2-0013.jpg');
+    background-image: url('../assets/img/Edited_202-0013.jpg');
     background-size: cover;
     background-position: center top;
     width: 100%;
@@ -91,10 +91,95 @@ header {
         }
     }
 }
-
+.title {
+    text-align: center;
+    font-size: 60px;
+}
 .our-story {
-    .title {
-        text-align: center;
-        font-size: 60px;
+
+}
+
+.gallery {
+    .image-link {
+        float: left;
+        width: 31.3%;
+        height: 330px;
+        margin-bottom: 3%;
+        &:nth-child(3n-2) {
+            margin-right: 3%;
+        }
+        &:nth-child(3n) {
+            margin-left: 3%;
+        }
+        .image-img1 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0003.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img2 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0020.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img3 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0022.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img4 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0039.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img5 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0043.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img6 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0049.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img7 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0054.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img8 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/Edited_202-0056.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .image-img9 {
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/img/image1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
     }
+}
+
+
+footer {
+    margin-top: 50px;
+    height: 200px;
+    background-color: black;
 }
