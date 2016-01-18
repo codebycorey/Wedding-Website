@@ -14,10 +14,10 @@
         <nav class="navbar-fixed">
             <div class="container">
                 <ul class="navbar-nav">
-                    <li><a href="">Our Story</a></li>
+                    <li><a href="#our-story">Our Story</a></li>
                     <li><a href="#gallery">PHOTOS</a></li>
-                    <li><a href="">WEDDING</a></li>
-                    <li><a href="">REGISTRY</a></li>
+                    <li><a href="#wedding">WEDDING</a></li>
+                    <li><a href="#registry">REGISTRY</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,12 +31,13 @@
         </div>
     </section>
 
-    <section class="container our-story">
+    <section id="our-story" class="container our-story">
         <h1 class="title">Our story</h1>
         <p class="body">At just 15 and 16 years old, I don't think Corey or I knew that there wouldn't be a day after September 1, 2008 that we wouldn't be on each other's minds. We officially met at the end of our freshman year in high school on our school bus. I will never forget the exact moment that I was drawn to Corey, I saw him laughing at my sarcastic jokes while I was talking to someone else on the bus. Somehow conversation sparked, we hung out a lot over the summer, and the first day of September Corey asked me to be his girlfriend. While it's rare for young love to last, and I don't think many people expected us to, there was always something different about Corey and I; each of us had what the other lacked and it was just perfect. From ring dance, to prom, to both of us graduating high school and getting accepted to ODU, and now both of us graduating from ODU, there hasn't been a major milestone that Corey and I haven't experienced together. What Corey and I have is one of a kind, and there's no one else I would want by my side for the many more milestones to come!</p>
     </section>
 
     <section id="gallery" class="container gallery">
+        <div>
         <h1 class="title">Engagement Photos</h1>
         <div class="gallery-image">
             <a class="image-link" href="assets/img/Edited_202-0003.jpg" data-lightbox="image-set" data-title="My caption">
@@ -67,21 +68,48 @@
                 <div class="image-img9"></div>
             </a>
         </div>
+        </div>
     </section>
 
-    <section class="container">
+    <section id="wedding" class="container wedding">
         <h1 class="title">Wedding</h1>
-        <p>Smithfield Center</p>
-        <p>220 N Church St, Smithfield, VA 23430</p>
+        <div class="wedding-ceremony">
+            <h2>Ceremony and Reception</h2>
+            <div class="wedding-location">
+                <h3>Smithfield Center</h3>
+                <p>220 N Church St, Smithfield, VA 23430</p>
+                <img src="assets/img/smithfield.jpg">
+            </div>
+            <iframe class="wedding-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.7545559318378!2d-76.6325929398255!3d36.98453584999437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x05a84a4a362d98fe!2sSmithfield+Center!5e0!3m2!1sen!2sus!4v1453071616302" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="wedding-hotels">
+            <h2>Hotels Nearby</h2>
+            <div class="hotel">
+                <h3>Hampton Inn & Suites</h3>
+                <p>200 Vincents Crossing</p>
+                <p>Smithfield, VA 23430</p>
+                <p>757-365-4760</p>
+                <img src="assets/img/hampton.jpg"/>
+            </div>
+            <div class="hotel">
+                <h3>The Smithfield Station</h3>
+                <p>415 South Church Street</p>
+                <p>Smithfield, VA 23430</p>
+                <p>757-357-7700</p>
+                <img src="assets/img/station.jpg"/>
+            </div>
+        </div>
     </section>
 
-    <section class="container registry">
+    <!-- <div class="divider-ring"></div> -->
+
+    <section id="registry" class="container registry">
         <h1 class="title">Registry</h1>
         <div>
-            <a href="https://www.amazon.com/registry/wedding/1G08UFFB0VITR"><div class="registry-button"><img src="assets/img/Amazon-Logo.png"></div></a>
+            <a target="_blank" href="https://www.amazon.com/registry/wedding/1G08UFFB0VITR"><div class="registry-button"><img src="assets/img/Amazon-Logo.png"></div></a>
         </div>
         <div>
-            <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542251415&pwsurl="><div class="registry-button"><img src="assets/img/Bed-bath-and-beyond-logo.png"></div></a>
+            <a target="_blank" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542251415&pwsurl="><div class="registry-button"><img src="assets/img/Bed-bath-and-beyond-logo.png"></div></a>
         </div>
     </section>
 
@@ -91,6 +119,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="node_modules/lightbox2/src/js/lightbox.js"></script>
-
 </body>
 </html>

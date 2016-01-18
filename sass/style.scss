@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto|Rouge+Script);
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Rouge+Script|Droid+Serif);
 
 $darkgrey: #1a1a1a;
 $midgrey: #4d4d4d;
@@ -8,6 +6,7 @@ $lightgrey: #666666;
 
 body {
     font-family: 'Droid Serif', serif;
+    overflow: auto;
 }
 
 h1 {
@@ -72,7 +71,7 @@ a {
         position: absolute;
         top: 50%;
         left: 25%;
-        width: 40%;
+        width: 50%;
         transform: translateX(-50%) translateY(-50%);
         text-align: center;
         h1 {
@@ -86,9 +85,7 @@ a {
                 font-size: 80px;
             }
         }
-
         p {
-
             text-shadow: 0 2px 5px rgba(0,0,0,0.75);
         }
         .knot {
@@ -106,93 +103,159 @@ a {
 }
 
 .our-story {
+    overflow: auto;
+    height: 100%;
     .body {
         color: $lightgrey;
     }
 }
 
 .gallery {
-    .image-link {
-        float: left;
-        width: 31.3%;
-        height: 330px;
-        margin-bottom: 3%;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.75);
-        &:nth-child(3n-2) {
-            margin-right: 3%;
-        }
-        &:nth-child(3n) {
-            margin-left: 3%;
-        }
-        .image-img1 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0003.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img2 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0020.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img3 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0022.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img4 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0039.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img5 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0043.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img6 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0049.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img7 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0054.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img8 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/Edited_202-0056.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .image-img9 {
-            height: 100%;
-            width: 100%;
-            background-image: url('../assets/img/image1.jpg');
-            background-size: cover;
-            background-position: center;
+    height: 100%;
+    .gallery-image {
+        height: 100%;
+        overflow: auto;
+        .image-link {
+            float: left;
+            width: 31.3%;
+            height: 330px;
+            margin-bottom: 3%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+            &:nth-child(3n-2) {
+                margin-right: 3%;
+            }
+            &:nth-child(3n) {
+                margin-left: 3%;
+            }
+            .image-img1 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0003.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img2 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0020.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img3 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0022.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img4 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0039.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img5 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0043.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img6 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0049.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img7 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0054.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img8 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/Edited_202-0056.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .image-img9 {
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/img/image1.jpg');
+                background-size: cover;
+                background-position: center;
+            }
         }
     }
 }
 
+.wedding {
+    .title {
+        margin: 50px 0 0 0;
+    }
+    height: 100%;
+    overflow: auto;
+    h2 {
+        text-align: center;
+        margin-top: 10px;
+        color: $midgrey;
+    }
+    h3 {
+        color: $midgrey;
+    }
+    p {
+        color: $lightgrey;
+    }
+    .wedding-ceremony {
+        height: 100%;
+        overflow: auto;
+        .wedding-location {
+            float: left;
+            width: 47%;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+            p {
+                color: $lightgrey;
+            }
+        }
+        .wedding-map {
+            margin-left: 6%;
+            width: 47%;
+            height: 400px;
+            float: left;
+        }
+    }
+    .wedding-hotels {
+        margin-top: 30px;
+        h2 {
+            margin: 0;
+        }
+        .hotel {
+            float: left;
+            width: 47%;
+            text-align: center;
+            img {
+                width: 100%;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+            }
+            &:nth-child(3) {
+                margin-left: 6%;
+            }
+        }
+    }
+}
 
 .registry {
-    padding: 0;
+    overflow: auto;
+    clear: both;
+    padding: 25px;
     width: 30%;
     margin: 0 auto;
     .registry-button {
@@ -209,7 +272,6 @@ a {
         // width: 50%;
     }
 }
-
 
 footer {
     margin-top: 50px;
