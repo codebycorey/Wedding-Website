@@ -278,3 +278,12 @@ footer {
     height: 200px;
     background-color: $darkgrey;
 }
+
+#welcome,
+#gallery,
+#wedding,
+#accommodations,
+#registry {
+    padding-top: 60px;
+    margin-top: -60px;
+}
