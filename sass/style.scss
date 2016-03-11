@@ -48,9 +48,12 @@ a {
             a {
                 color: white;
                 display: inline-block;
-                font-size: 20px;
+                font-size: 2vmin;
                 // font-weight: bold;
                 text-transform: uppercase;
+            }
+            @media screen and (max-width: 550px) {
+                padding: 20px 7px 20px;
             }
         }
     }
@@ -78,7 +81,7 @@ a {
             letter-spacing: -5px;
             text-shadow: 0 2px 5px rgba(0,0,0,0.75);
             font-weight: 100;
-            font-size: 160px;
+            font-size: 25vmin;
             padding: 0;
             margin: -0;
             span {
@@ -92,12 +95,12 @@ a {
             margin: 0;
             padding: 0;
             // font-weight: bold;
-            font-size: 44px;
+            font-size: 7vmin;
         }
         .date {
             padding: 0;
             margin: 0;
-            font-size: 30px;
+            font-size: 5vmin;
         }
     }
 }
