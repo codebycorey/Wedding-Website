@@ -45,15 +45,35 @@ a {
         li {
             display: inline-block;
             padding: 20px 20px 20px;
+            font-size: 20px;
             a {
                 color: white;
                 display: inline-block;
-                font-size: 2vmin;
-                // font-weight: bold;
                 text-transform: uppercase;
             }
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 800px) {
                 padding: 20px 7px 20px;
+                font-size: 15px;
+            }
+            @media screen and (max-width: 525px) {
+                padding: 20px 5px 20px;
+                font-size: 12px;
+            }
+            @media screen and (max-width: 420px) {
+                padding: 20px 3px 20px;
+                font-size: 9px;
+            }
+            @media screen and (max-width: 325px) {
+                padding: 20px 2px 20px;
+                font-size: 7px;
+            }
+            @media screen and (max-width: 250px) {
+                padding: 20px 2px 20px;
+                font-size: 5px;
+            }
+            @media screen and (max-width: 192px) {
+                padding: 20px 0px 20px;
+                font-size: 4px;
             }
         }
     }
@@ -81,11 +101,17 @@ a {
             letter-spacing: -5px;
             text-shadow: 0 2px 5px rgba(0,0,0,0.75);
             font-weight: 100;
-            font-size: 25vmin;
+            font-size: 160px;
             padding: 0;
             margin: -0;
             span {
                 font-size: 80px;
+                @media screen and (max-width: 800px) {
+                    font-size: 70px;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                font-size: 100px;
             }
         }
         p {
@@ -95,12 +121,18 @@ a {
             margin: 0;
             padding: 0;
             // font-weight: bold;
-            font-size: 7vmin;
+            font-size: 44px;
+            @media screen and (max-width: 800px) {
+                font-size: 34px;
+            }
         }
         .date {
             padding: 0;
             margin: 0;
-            font-size: 5vmin;
+            font-size: 30px;
+            @media screen and (max-width: 800px) {
+                font-size: 25px;
+            }
         }
     }
 }
@@ -270,10 +302,19 @@ a {
         text-align: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.75);
         img {
-            height: 64px;
+            width:100%;
+            max-width: 175px;
             padding: 6px 0;
         }
         // width: 50%;
+    }
+    .title {
+        @media screen and (max-width: 420px) {
+            font-size: 30px;
+        }
+        @media screen and (max-width: 175px) {
+            font-size: 25px;
+        }
     }
 }
 
